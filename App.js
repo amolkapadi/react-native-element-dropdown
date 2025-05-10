@@ -1,6 +1,6 @@
 
 import { StatusBar, SafeAreaView, Text } from 'react-native';
-import DropdownSelect from './component/DropdownSelect';
+import SearchDropDown from './component/SearchDropdown';
 export default function App() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
@@ -8,9 +8,7 @@ export default function App() {
         barStyle="light-content"
         backgroundColor="red"
       />
-
-
-      <DropdownSelect />
+      <SearchDropDown />
     </SafeAreaView>
   );
 }

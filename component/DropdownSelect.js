@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { Dropdown } from 'react-native-element-dropdown';
-
 const DropdownSelect = () => {
     const [selectedValue, setSelectedValue] = useState(null);
 
@@ -20,15 +19,15 @@ const DropdownSelect = () => {
             <Dropdown
                 style={styles.dropdown}
                 data={data}
-                labelField="label"
-                valueField="value"
-                placeholder="Select an option"
+                labelField='label'
+                valueField='value'
+                placeholder='Select an option'
                 value={selectedValue}
                 onChange={item => {
                     setSelectedValue(item.value);
                 }}
-            />
 
+            />
         </View>
     );
 };
@@ -36,21 +35,20 @@ const DropdownSelect = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 20,
+        padding: 10
     },
     title: {
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 10
     },
-
     dropdown: {
         height: 50,
         borderColor: 'gray',
         borderWidth: 1,
         borderRadius: 8,
-        paddingHorizontal: 8,
-    },
+        paddingHorizontal: 8
+    }
 });
 
 export default DropdownSelect;
